@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unimed</title>
+    <link rel="shortcut icon" type="image/x-icon" href="unimed-logo-1-2.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #078760;
+        }
+
+        .container {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff;
+            box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 56%;
+            padding: 10px;
+            background-color: #078760;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #078760;
+        }
+
+        img {
+            max-width: 100%;
+            height: 148px;
+        }
+
+        form {
+            text-decoration: solid;
+            position: sticky;
+        }
+
+        form button {
+            left: 26%;
+            position: relative;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://2viabr.com.br/wp-content/uploads/2020/08/Logomarca-da-UNIMED-e1532439696532-8.jpg"
+            alt="unimed">
+        <b>
+            <form action="tela" method="post">
+                <center><label for="Usuario">Usuário</label></center>
+                <input type="number" id="Usuario" name="Usuario" required placeholder="Digite seu CPF">
+                <br>
+                <center><label for="Senha">Senha</label></center>
+                <input type="password" id="Senha" name="Senha" required placeholder="Digite sua senha">
+                <br>
+                <b><button onclick="openPagina()" type="submit">Login</button></b>
+                <script src="primeirajanela.js"></script>
+                <br>
+            </form>
+        </b>
+    </div>
+</body>
+
+</html>
