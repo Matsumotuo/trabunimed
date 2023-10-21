@@ -61,19 +61,19 @@ button{
 
 .formulario input{
     border: 1px solid #ccc;
-    border-radius: 50px;
+    border-radius: 50vw;
     width: 20%;
     height: 50%;
 }
 
 .formulario input[type=text]{
-    width: 200px;
-    margin-left: 50px;
-    height: 30px;
+    width: 60vw;
+    margin-left: 2vw;
+    height: 3vw;
 }
 .formulario input[type=month]{
     text-align: center;
-    width: 200px;
-    margin-left: 50px;
-    height: 30px;
+    width: 200vw;
+    margin-left: 50vw;
+    height: 0vw;
 }

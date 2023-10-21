@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinição de Senha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #containersenha {
+            max-width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        @media screen and (max-width: 320px) {
+            #containersenha {
+                max-width: 100%;
+                margin: 0;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="containersenha">
+        <h2>Redefinir Senha</h2>
+        <form id="resetarsenha">
+            <input type="password" id="novasenha" placeholder="Nova senha" style="width: 100%;"><br><br>
+            <input type="password" id="confirmarsenha" placeholder="Confirme a nova senha" style="width: 100%;"><br><br>
+            <input type="button" value="Redefinir Senha" onclick="redefinirsenha()" style="width: 100%;">
+        </form>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+
+</html>
