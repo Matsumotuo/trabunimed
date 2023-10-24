@@ -1,6 +1,15 @@
-function openPagina(){
-    window.open('telasistema.HTML','_self');
+function validarLogin(event) {
+    event.preventDefault(); // impede o envio padrão do formulário
+    const usuario = document.getElementById("Usuario").value;
+    const senha = document.getElementById("Senha").value;
+    
+    if (usuario === "12345678911" && senha === "12345") {
+        window.open('sistema.html','_self');
+    } else {
+        alert("Login ou senha incorretos!");
+    }
 }
+
 
 //data na pagina de cadastrar email
 document.addEventListener("load", function() {
@@ -20,7 +29,7 @@ document.addEventListener("load", function() {
     meucampo.setAttribute("min", dataMinima);
 });
 
-
+//redefinirsenha
 function redefinirsenha() {
     const novasenha = document.getElementById('novasenha').value;
     const confirmarsenha = document.getElementById('confirmarsenha').value;

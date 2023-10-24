@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #078760;
+}
+
+#containersenha {
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 320px) {
+    #containersenha {
+        max-width: 100%;
+        margin: 0;
+        padding: 15px;
+    }
+}

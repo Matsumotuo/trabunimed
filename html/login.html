@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unimed</title>
-    <link rel="shortcut icon" type="image/x-icon" href="unimed-logo-1-2.png">
-    <link rel="stylesheet" href="telalogin.css">
+    <link rel="shortcut icon" type="image/x-icon" href="image/unimed-logo-1-2.png">
+    <link rel="stylesheet" href="css/telalogin.css">
 </head>
 
 <body>
@@ -21,8 +21,8 @@
                 <center><label for="Senha">Senha</label></center>
                 <input type="password" id="Senha" name="Senha" maxlength="5" pattern="^\d{5}$" required placeholder="Digite sua senha">
                 <br>
-                <b><button onclick="openPagina()" type="submit">Login</button></b>
-                <script src="index.js"></script>
+                <b><button onclick="validarLogin(event)" type="submit">Login</button></b>
+                <script src="js/index.js"></script>
                 <br>
                 </b>
                 <label for="redsenha"><a href="redefinirsenha.html" target="_blank">Redefinir senha</a></label>
