@@ -12,7 +12,7 @@ function validarLogin(event) {
 }
 
 
-//data na pagina de cadastrar email
+
 document.addEventListener("load", function() {
     //data na pagina de cadastrar email
     var dataLocal = new Date();
@@ -44,3 +44,9 @@ function redefinirsenha() {
     alert('Nova senha efetuada');
     window.open('login.html','_self');
 }
+
+function enviar(){
+    alert("Contrato enviado")
+}
+
+

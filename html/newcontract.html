@@ -15,7 +15,7 @@
         <input type="text" placeholder="Procurar">
         </b>
     </div>
-    <div class="formulario">
+    <div class="formulario" id="formulario">
         <h3>
             <form action=""></form>
             <label for="ID">NOME DO CONTRATO</label>
@@ -33,12 +33,12 @@
             <label for="DATACONTRATO"> ID SINGULAR </label>
             <input type="text" id="data" name="data" maxlength="3" pattern="^\d{3}$" required>
             <br><br>
-            <button>ENVIAR</button>
+            <button id ="contrato" onclick="enviar()">ENVIAR</button>
             <br><br>
             </form>
         </h3>
     </div>
 </body>
-<script src="index.js"></script>
+<script src="js/index.js"></script>
 
 </html>
