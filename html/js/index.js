@@ -1,13 +1,14 @@
 function validarLogin(event) {
-    event.preventDefault(); // impede o envio padrão do formulário
+    event.preventDefault(); // impede o envio padrão do formulário bug
     const usuario = document.getElementById("Usuario").value;
     const senha = document.getElementById("Senha").value;
     
-    if (usuario === "12345678911" && senha === "12345") {
+    if (usuario === "11111111111" && senha === "12345") {
         window.open('sistema.html','_self');
     } else {
         alert("Login ou senha incorretos!");
     }
+    //função para passar uma senha só
 }
 
 
