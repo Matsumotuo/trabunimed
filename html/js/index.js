@@ -45,8 +45,16 @@ function redefinirsenha() {
     window.open('login.html','_self');
 }
 
-function enviar(){
-    alert("Contrato enviado")
+function abrirDialog() { // pop up de envio 
+
+    var dialog = document.querySelector('.buttondialog');
+ 
+    dialog.showModal();
+
+    dialog.querySelector('button').addEventListener('click', function() {
+        dialog.close();
+    });
+
+    
+    
 }
-
-
