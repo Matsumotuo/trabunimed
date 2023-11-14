@@ -1,7 +1,7 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
 
 <head>
-    <html lang="pt-BR">
     <title>Unimed</title>
     <link rel="shortcut icon" type="image/x-icon" href="image/unimed-logo-1-2.png">
     <link rel="stylesheet" href="css/tela02.css">
@@ -9,34 +9,38 @@
 
 <body>
     <div class="topnav">
-        </b>
         <a href="newcontract.html">Novo Contrato</a>
         <a href="contract.html">Contrato</a>
         <input type="text" placeholder="Procurar">
-        </b>
     </div>
     <div class="formulario" id="formulario">
         <h3>
-            <form action=""></form>
-            <label for="ID">NOME DO CONTRATO</label>
-            <input type="text" id="id" name="id" required>
-            <br><br>
-            <label for="ID">ID DO CONTRATO</label>
-            <input type="text" id="id" name="id" maxlength="12" required>
-            <br><br>
-            <label for="DATACONTRATO"> DATA CONTRATO </label>
-            <input type="month" id="meucampo" max="2030-12" required>
-            <br><br>
-            <label for="DATACONTRATO"> NOME SINGULAR </label>
-            <input type="text" id="data" name="data" required>
-            <br><br>
-            <label for="DATACONTRATO"> ID SINGULAR </label>
-            <input type="text" id="data" name="data" maxlength="3" pattern="^\d{3}$" required>
-            <br><br>
-            <button id ="contrato" onclick="enviar()">ENVIAR</button>
-            <br><br>
+            <form action="">
+                <label for="nomeContrato">NOME DO CONTRATO</label>
+                <input type="text" id="nomeContrato" name="nomeContrato" required>
+                <br><br>
+                <label for="idContrato">ID DO CONTRATO</label>
+                <input type="text" id="idContrato" name="idContrato" maxlength="12" required>
+                <br><br>
+                <label for="dataContrato"> DATA CONTRATO </label>
+                <input type="month" id="dataContrato" max="2030-12" required>
+                <br><br>
+                <label for="nomeSingular"> NOME SINGULAR </label>
+                <input type="text" id="nomeSingular" name="nomeSingular" required>
+                <br><br>
+                <label for="idSingular"> ID SINGULAR </label>
+                <input type="text" id="idSingular" name="idSingular" maxlength="3" pattern="^\d{3}$" required>
+                <br><br>
+                <button id="contrato" onclick="abrirDialog()">ENVIAR</button>
             </form>
         </h3>
+        <dialog class="buttondialog">
+            <h2 class="htext">Envio de Formulário</h2>
+            <p class="ptext">Formulário enviado com sucesso</p>
+            
+            <button class="buttonc">
+            <button class="buttonc">Fechar</button>
+        </dialog>
     </div>
 </body>
 <script src="js/index.js"></script>
