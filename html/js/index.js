@@ -53,8 +53,41 @@ function abrirDialog() { // pop up de envio
 
     dialog.querySelector('button').addEventListener('click', function() {
         dialog.close();
-    });
+    }); 
+}
 
-    
-    
+function fecharDialog() { // pra redefinir oq aparece nos inputs
+    var dialog = document.querySelector('.buttondialog');
+    dialog.close();
+
+    document.getElementById('nomeContrato').value = '';
+    document.getElementById('idContrato').value = '';
+    document.getElementById('dataContrato').value = '';
+    document.getElementById('nomeSingular').value = '';
+    document.getElementById('idSingular').value = '';
+
+}
+
+
+
+function verificarEnter(event) { // pra funcionar quando der enter
+    if (event.key === "Enter") {
+        pesquisar();
+    }
+}
+
+
+function pesquisar() {
+    var input = document.getElementById('botaoprocurar').value.toLowerCase();
+
+    if (input === 'novembro2023') {
+        document.getElementById('nomeContrato').value = 'Bolsonaro Plano de saude';
+        document.getElementById('idContrato').value = '453178287912';
+        document.getElementById('dataContrato').value = '2023-11';
+        document.getElementById('nomeSingular').value = 'Bolso453';
+        document.getElementById('idSingular').value = '123';
+        document.getElementById('botaoprocurar').value = '';
+    } else {
+        alert('Erro! Tente novamente.');
+    }
 }

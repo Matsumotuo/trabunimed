@@ -65,6 +65,11 @@ button {
     font-family: "Arial Black";
 }
 
+
+label{
+    color: #fff;
+}
+
 .formulario input {
     border: 1px solid #ccc;
     border-radius: 50vw;
@@ -130,7 +135,7 @@ button {
 }
 
 .buttonc{
-    margin-left: -9%;
+    margin-left: 0%;
     box-shadow: #000;
     position: relative;
     width: 18%;
