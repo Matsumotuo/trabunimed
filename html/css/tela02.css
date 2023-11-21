@@ -118,17 +118,12 @@ label{
 }
 
 
-.buttondialog::backdrop {
-
-    background-color: #078760;
-}
-
 .buttondialog {
    
     border: none;
-    border-radius:-0.5rem;
+    border-radius: 0.5rem;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
-    width: 84%;
+    width: 60%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 150%;
     font-weight: 10%;
