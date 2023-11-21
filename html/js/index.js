@@ -45,16 +45,26 @@ function redefinirsenha() {
     window.open('login.html','_self');
 }
 
-function abrirDialog() { // pop up de envio 
-
+function abrirDialog() { // pop up de envio
     var dialog = document.querySelector('.buttondialog');
- 
+    var form = document.querySelector('form');
+
+
+    for (var i = 0; i < form.elements.length; i++) {
+        var currentInput = form.elements[i];
+        if (currentInput.type !== "button" && currentInput.type !== "submit" && currentInput.value.trim() === '' && !currentInput.checkValidity()) {
+            alert('Prencha os campos em branco!');
+            return;
+        }
+    }
+
     dialog.showModal();
 
     dialog.querySelector('button').addEventListener('click', function() {
         dialog.close();
-    }); 
+    });
 }
+
 
 function fecharDialog() { // pra redefinir oq aparece nos inputs
     var dialog = document.querySelector('.buttondialog');
@@ -65,6 +75,7 @@ function fecharDialog() { // pra redefinir oq aparece nos inputs
     document.getElementById('dataContrato').value = '';
     document.getElementById('nomeSingular').value = '';
     document.getElementById('idSingular').value = '';
+
 
 }
 
@@ -79,14 +90,15 @@ function verificarEnter(event) { // pra funcionar quando der enter
 
 function pesquisar() {
     var input = document.getElementById('botaoprocurar').value.toLowerCase();
-
+    
     if (input === 'novembro2023') {
-        document.getElementById('nomeContrato').value = 'Bolsonaro Plano de saude';
-        document.getElementById('idContrato').value = '453178287912';
-        document.getElementById('dataContrato').value = '2023-11';
-        document.getElementById('nomeSingular').value = 'Bolso453';
-        document.getElementById('idSingular').value = '123';
-        document.getElementById('botaoprocurar').value = '';
+
+        document.getElementById('nomeContrato2').value = 'Bolsonaro Plano de saude';
+        document.getElementById('idContrato2').value = '453178287912';
+        document.getElementById('dataContrato2').value = '2023-11';
+        document.getElementById('nomeSingular2').value = 'Bolso453';
+        document.getElementById('idSingular2').value = '123';
+        document.getElementById('botaoprocurar2').value = '';
     } else {
         alert('Erro! Tente novamente.');
     }
