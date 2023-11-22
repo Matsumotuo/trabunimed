@@ -4,7 +4,7 @@ function validarLogin(event) {
     const senha = document.getElementById("Senha").value;
     
     if (usuario === "11111111111" && senha === "12345") {
-        window.open('sistema.html','_self');
+        window.open('home.html','_self');
     } else {
         alert("Login ou senha incorretos!");
     }
@@ -101,5 +101,16 @@ function pesquisar() {
         document.getElementById('botaoprocurar2').value = '';
     } else {
         alert('Erro! Tente novamente.');
-    }
+    };
+}
+function exibirMensagem(cidade) {
+    
+    document.getElementById("mensagemCuritiba").style.display = "none";
+    document.getElementById("mensagemParanagua").style.display = "none";
+    document.getElementById("mensagemFoz").style.display = "none";
+    document.getElementById("mensagemMaringa").style.display = "none";
+    document.getElementById("mensagemPatoBranco").style.display = "none";
+
+   
+    document.getElementById("mensagem" + cidade).style.display = "block";
 }
