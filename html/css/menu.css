@@ -2,15 +2,18 @@
 
 *{
     font-family: "Arial Black";
+
+    margin: 0;
+    padding: 0;
 }
 
 body.lateral{
-    height: 300vh;
+    height: 100vh;
+    
 }
 
 nav.menu-lateral{
-    
-    width: 80px;
+    width: 55px;
     height: 100%;
     background-color: #078760;
     padding: 40px 0 40px 1%;
@@ -28,18 +31,22 @@ nav.menu-lateral:hover{
 
 .btn-expardir{
     width: 100%;
+    left: 2px
 }
 
 .btn-expandir > i{
+    
     color:white;
-    font-size: 30px;
+    font-size: 35px;
     cursor: pointer;
+    margin-left: 8px;
     
 }
 
 ul{
     height: 100%;
     list-style-type: none;
+    top: 2px;
 }
 
 ul li.item-menu a{
@@ -47,19 +54,22 @@ ul li.item-menu a{
     white-space: nowrap;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 27px;
     padding: 20px 4%;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: 40px;
+    margin-top: 10px;
+    margin-left: 8px;
 }
 
 ul li.item-menu a .txt-link{
-    margin-left: 20px;
+    margin-left: 28px;
 }
 
 ul li.item-menu a .icon > i {
-    font-size: 20px;
+    font-size: 25px;
+    margin-left: 3px;
 }
 
 ul li.item-menu{
