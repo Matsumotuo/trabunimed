@@ -1,13 +1,74 @@
-* {
-    box-sizing: border-box;
+/* MENU RESPONSIVO */
+
+*{
+    font-family: "Arial Black";
 }
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+body.lateral{
+    height: 300vh;
 }
 
+nav.menu-lateral{
+    
+    width: 80px;
+    height: 100%;
+    background-color: #078760;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hideen;
+    transition: .5s;
+}
+
+nav.menu-lateral:hover{
+    width: 300px
+}
+
+.btn-expardir{
+    width: 100%;
+}
+
+.btn-expandir > i{
+    color:white;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu a{
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 20px;
+}
+
+ul li.item-menu a .icon > i {
+    font-size: 20px;
+}
+
+ul li.item-menu{
+    transition: .5s
+}
+
+ul li.item-menu:hover{
+    background-color: gray;
+}
 
 
 
@@ -24,6 +85,7 @@ button {
     cursor: pointer;
     margin-left: 40%;
     font-family: "Arial Black";
+    overflow: hidden;
 }
 
 
@@ -36,12 +98,15 @@ label{
     border-radius: 50vw;
     width: 25%;
     height: 60%;
+    margin-left: 2px;
+    letter-spacing: 2px;
 }
 
 .formulario input[type="text"] {
     width: 33vw;
     margin-left: 0vw;
     height: 2vw;
+    padding-left: 10px;
 }
 
 .formulario input[type="month"] {
@@ -52,7 +117,7 @@ label{
 }
 
 .formulario {
-    position: relative;
+    position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,6 +128,7 @@ label{
     width: 35%;
     margin-top: 2%;
     max-width: 100%;
+    font-family: "Arial Black";
     margin-left: 31%;
 }
 
@@ -73,6 +139,7 @@ label{
         margin: 5% auto;
         width: 90%;
         max-width: 90%;
+
     }
 }
 
@@ -85,17 +152,19 @@ label{
     border-radius: 0.5rem;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
     width: 60%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Arial Black";
     font-size: 150%;
     font-weight: 10%;
     line-height: 5%; 
     text-align: center;
+    overflow: hidden;
 }
 
 .buttonc{
-    margin-left: 0%;
+    margin-left: 2px;
     box-shadow: #000;
     position: relative;
+    overflow: hidden;
     width: 18%;
     padding: 13px;
     background-color: #fff;
@@ -106,3 +175,17 @@ label{
     font-family: "Arial Black";
 }
 
+.botaoprocurar{
+    overflow: hidden;
+    white-space: nowrap;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-family: "Arial Black";
+    border: none;
+    border-radius: 25px;
+}
