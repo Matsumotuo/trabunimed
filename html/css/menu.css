@@ -161,11 +161,14 @@ label{
     border: none;
     border-radius: 0.5rem;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
-    width: 60%;
-    font-family: "Arial Black";
-    font-size: 150%;
-    font-weight: 10%;
-    line-height: 5%; 
+    width: 55%;
+    max-width: 800px; 
+    margin: 0 auto;
+    margin-top: 18rem;
+    font-family: "Arial Black", sans-serif; 
+    font-size: 2rem;
+    font-weight: bold; 
+    line-height: 1.5; 
     text-align: center;
     overflow: hidden;
 }
