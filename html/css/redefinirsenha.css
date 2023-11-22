@@ -5,13 +5,20 @@ body {
 }
 
 #containersenha {
+    margin: 15% auto;
     width: 30rem;
     height: 15rem;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #ffffff;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #010102;
+    border-radius: 15px;
+    color: #050607;
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .enviar {
